@@ -1,4 +1,4 @@
-from travel_agent import travel_companion
+from agents.travel_agent import travel_companion
 
 city = input("Enter destination city: ")
 

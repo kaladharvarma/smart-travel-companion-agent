@@ -6,7 +6,7 @@ load_dotenv()
 
 API_KEY = os.getenv("OPENWEATHER_API_KEY")
 
-print(API_KEY)
+#print(API_KEY)
 
 def get_weather(city: str):
 

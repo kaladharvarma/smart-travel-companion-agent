@@ -1,8 +1,8 @@
-from weather_tool import get_weather
-from llm import get_travel_advice
+from tools.weather_tool import get_weather
+from llms.router import generate_response
 
 
-def travel_companion(city):
+def travel_companion(city: str):
 
     print("\nFetching weather...\n")
 
@@ -10,7 +10,7 @@ def travel_companion(city):
 
     print("Thinking...\n")
 
-    advice = get_travel_advice(weather)
+    advice = generate_response(weather)
 
     print("=" * 60)
     print("SMART TRAVEL COMPANION")
